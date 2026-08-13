@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+header p {
+    max-width: 850px;
+    margin: 15px auto;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f3c88;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d97706;
+}
+
+section {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+header {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    background-color: white;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a:hover {
+    color: #0077b6;
+}
