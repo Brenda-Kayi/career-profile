@@ -122,13 +122,10 @@ main {
 
 
 .intro-section h1 {
-    font-size: clamp(2.3rem, 5vw, 4rem);
-
+   font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
 }
 
 .intro-section h2 {
@@ -156,36 +153,34 @@ main {
     color: #edf5fa;
 }
 
+/* =========================
+   PROFESSIONAL FOCUS
+========================= */
 
 .professional-focus {
     max-width: 650px;
-
     margin: 55px auto 45px;
-
-    text-align: left;
+    text-align: center;
 }
 
 .professional-focus h2 {
     text-align: center;
-
     font-size: 1.6rem;
-
     margin-bottom: 25px;
-
     letter-spacing: 1px;
 }
 
 .professional-focus ul {
     list-style: none;
-
     display: flex;
-
     flex-direction: column;
-
+    align-items: center;
     gap: 14px;
 }
 
 .professional-focus li {
+    width: 100%;
+    max-width: 500px;
     background: rgba(255, 255, 255, 0.09);
 
     border-left: 4px solid #4db8ff;
@@ -194,7 +189,7 @@ main {
 
     border-radius: 6px;
 
-    font-size: 1rem;
+    text-align: center;
 
     backdrop-filter: blur(5px);
 
@@ -204,15 +199,24 @@ main {
 }
 
 .professional-focus li:hover {
-    transform: translateX(8px);
-
+    transform: translateY(-3px);
     background: rgba(255, 255, 255, 0.14);
 }
 
+.professional-focus li a {
+    display: block;
+    width: 100%;
 
-/* =========================
-   CALL TO ACTION
-========================= */
+    color: #ffffff;
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.professional-focus li a:hover {
+    color: #4db8ff;
+}
+
 
 .call-to-action {
     margin-top: 35px;
@@ -307,5 +311,199 @@ footer {
 
     .call-to-action p {
         font-size: 1.05rem;
+    }
+}
+
+
+.about-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.about-header h1 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: left;
+}
+
+.about-section > h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #bfe6ff;
+    position: relative;
+}
+
+.about-section > h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #4db8ff;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #edf5fa;
+    margin-bottom: 20px;
+}
+
+
+.focus-detail {
+    background: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #4db8ff;
+
+    padding: 25px 28px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.focus-detail:hover {
+    transform: translateX(6px);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.focus-detail h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.focus-detail p {
+    margin-bottom: 0;
+}
+
+
+.strengths {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.strength {
+    background: rgba(255, 255, 255, 0.08);
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    border-top: 3px solid #4db8ff;
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.strength:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.strength h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.strength p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+
+.career-goal {
+    max-width: 800px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #4db8ff;
+
+    backdrop-filter: blur(5px);
+}
+
+.career-goal h2 {
+    margin-bottom: 25px;
+}
+
+
+nav ul li a.active {
+    color: #4db8ff;
+}
+
+nav ul li a.active::after {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-section {
+        margin-bottom: 45px;
+    }
+
+    .strengths {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section p {
+        font-size: 0.98rem;
+        line-height: 1.8;
+    }
+
+    .focus-detail {
+        padding: 22px;
+    }
+
+    .career-goal {
+        padding: 28px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .about-header {
+        margin-bottom: 40px;
+    }
+
+    .about-section > h2 {
+        font-size: 1.5rem;
+    }
+
+    .focus-detail {
+        padding: 18px;
+    }
+
+    .strength {
+        padding: 20px;
+    }
+
+    .career-goal {
+        padding: 22px;
     }
 }
